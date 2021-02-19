@@ -5,7 +5,7 @@ const bot =  new Telegraf(env.token)
 
 bot.start(ctx => {
     const from = ctx.update.message.from
-    const usuario = '';
+    const usuario = env.idUser;
 
     if(from.id == usuario){
         ctx.reply(`Ao seu dispor, ${from.first_name} meu mestre!`)
