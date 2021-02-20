@@ -15,6 +15,6 @@ bot.command('ajuda', ctx => ctx.reply('/ajuda: vou mostrar as opções'
 
 bot.hears('/ajuda2', ctx => ctx.reply('Eu também consigo capturar comandos, mas utilize o commands para isso'))
 
-bot.hears(/op/i, ctx => ctx.reply('Resposta padrão!'))
+bot.hears(/op(2|3)/i, ctx => ctx.reply('Resposta padrão!'))
 
 bot.startPolling()
